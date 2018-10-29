@@ -1,0 +1,23 @@
+{
+  "name": "server_monitor_api",
+  "version": "1.0.0",
+  "description": "Backend api for Server Monitor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Justin Savala",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "node-powershell": "^3.3.1",
+    "node-wmi": "0.0.5",
+    "npm": "^6.4.1",
+    "wmi-client": "^0.4.1",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}

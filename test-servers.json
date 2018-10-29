@@ -1,0 +1,56 @@
+{
+    "USLONL-A12224": {
+        "Operational": false,
+        "HostName": "USLONL-A12224",
+        "Purpose": "Test Server",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.70",
+                "Online": false
+            },
+            {
+                "Name": "Panel",
+                "IP": "192.168.1.71",
+                "Online": false
+            },
+            {
+                "Name": "System",
+                "IP": "192.168.1.72",
+                "Online": false
+            }
+        ],
+        "Services": [
+            {
+                "Name": "MSSQL$DEV2017",
+                "Description": "SQL Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "RabbitMQ",
+                "Description": "RabbitMQ Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaBusinessEngine",
+                "Description": "Traka Business Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaCommsEngine",
+                "Description": "Traka Comms Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Integration Engine",
+                "Description": "Traka Integration Engine",
+                "Running": false,
+                "State": "Stopped"
+            }
+        ]
+    }
+}

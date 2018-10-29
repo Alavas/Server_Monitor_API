@@ -1,0 +1,442 @@
+{
+    "CCURE": {
+        "Operational": false,
+        "HostName": "TUSA-CCURE.TRAKAUSA.COM",
+        "Purpose": "SWH CCURE Integration Example",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.21",
+                "Online": false
+            },
+            {
+                "Name": "Panel",
+                "IP": "192.168.1.31",
+                "Online": false
+            },
+            {
+                "Name": "System",
+                "IP": "192.168.1.41",
+                "Online": false
+            }
+        ],
+        "Services": [
+            {
+                "Name": "MSSQL$SQLEXPRESS",
+                "Description": "SQL Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "CrossFireServerComponentFramework",
+                "Description": "CrossFire Server Component Framework Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "CrossFire",
+                "Description": "Crossfire Framework Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "CrossFireiSTARDriverService",
+                "Description": "Software House CrossFire iSTAR Driver Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "RabbitMQ",
+                "Description": "RabbitMQ Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaBusinessEngine",
+                "Description": "Traka Business Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaCommsEngine",
+                "Description": "Traka Comms Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Integration Engine",
+                "Description": "Traka Integration Engine",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka CCURE Integration",
+                "Description": "Traka CCURE Integration",
+                "Running": false,
+                "State": "Stopped"
+            }
+        ]
+    },
+    "Lenel": {
+        "Operational": false,
+        "HostName": "TUSA-LENEL.TRAKAUSA.COM",
+        "Purpose": "Lenel OnGuard Integration Example",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.22",
+                "Online": false
+            },
+            {
+                "Name": "Panel",
+                "IP": "192.168.1.32",
+                "Online": false
+            },
+            {
+                "Name": "System",
+                "IP": "192.168.1.42",
+                "Online": false
+            }
+        ],
+        "Services": [
+            {
+                "Name": "MSSQL$SQLEXPRESS",
+                "Description": "SQL Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "LS License Server",
+                "Description": "LS License Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "LS Application Server",
+                "Description": "LS Application Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "LS Login Driver",
+                "Description": "LS Login Driver",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "LS Communication Server",
+                "Description": "LS Communication Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "LS Linkage Server",
+                "Description": "LS Linkage Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "LS DataConduIT Service",
+                "Description": "LS DataConduIT Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "RabbitMQ",
+                "Description": "RabbitMQ Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaBusinessEngine",
+                "Description": "Traka Business Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaCommsEngine",
+                "Description": "Traka Comms Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Integration Engine",
+                "Description": "Traka Integration Engine",
+                "Running": false,
+                "State": "Stopped"
+            }
+        ]
+    },
+    "Genetec": {
+        "Operational": false,
+        "HostName": "TUSA-GENETEC.TRAKAUSA.COM",
+        "Purpose": "Genetec Security Center Integration Example",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.43",
+                "Online": false
+            },
+            {
+                "Name": "Panel",
+                "IP": "192.168.1.43",
+                "Online": false
+            },
+            {
+                "Name": "System",
+                "IP": "192.168.1.43",
+                "Online": false
+            }
+        ],
+        "Services": [
+            {
+                "Name": "MSSQLSERVER",
+                "Description": "SQL Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "GenetecServer",
+                "Description": "Genetec Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Genetec Softwire Controller",
+                "Description": "Genetec Softwire Controller",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "RabbitMQ",
+                "Description": "RabbitMQ Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaBusinessEngine",
+                "Description": "Traka Business Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaCommsEngine",
+                "Description": "Traka Comms Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Integration Engine",
+                "Description": "Traka Integration Engine",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Genetec Integration",
+                "Description": "Traka Genetec Integration",
+                "Running": false,
+                "State": "Stopped"
+            }
+        ]
+    },
+    "OpenOptions": {
+        "Operational": false,
+        "HostName": "TUSA-OPENOPTS.TRAKAUSA.COM",
+        "Purpose": "Open Options dnaFusion Integration Example",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.24",
+                "Online": false
+            },
+            {
+                "Name": "Panel",
+                "IP": "192.168.1.34",
+                "Online": false
+            },
+            {
+                "Name": "System",
+                "IP": "192.168.1.44",
+                "Online": false
+            }
+        ],
+        "Services": [
+            {
+                "Name": "MSSQL$OPENOPTIONS",
+                "Description": "SQL Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "RabbitMQ",
+                "Description": "RabbitMQ Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "DNADrvr32",
+                "Description": "dnaFusion Driver",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "OpenOptions.dnaFusion.Flex",
+                "Description": "dnaFusion Flex",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaBusinessEngine",
+                "Description": "Traka Business Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaCommsEngine",
+                "Description": "Traka Comms Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Integration Engine",
+                "Description": "Traka Integration Engine",
+                "Running": false,
+                "State": "Stopped"
+            }
+        ]
+    },
+    "AMAG": {
+        "Operational": false,
+        "HostName": "TUSA-AMAG.TRAKAUSA.COM",
+        "Purpose": "AMAG Symmetry Integration Example",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.25",
+                "Online": false
+            },
+            {
+                "Name": "Panel",
+                "IP": "192.168.1.35",
+                "Online": false
+            },
+            {
+                "Name": "System",
+                "IP": "192.168.1.45",
+                "Online": false
+            }
+        ],
+        "Services": [
+            {
+                "Name": "MSSQL$SQLEXPRESS",
+                "Description": "SQL Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "RabbitMQ",
+                "Description": "RabbitMQ Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaBusinessEngine",
+                "Description": "Traka Business Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaCommsEngine",
+                "Description": "Traka Comms Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Integration Engine",
+                "Description": "Traka Integration Engine",
+                "Running": false,
+                "State": "Stopped"
+            }
+        ]
+    },
+    "S2": {
+        "Operational": false,
+        "HostName": "TUSA-S2.TRAKAUSA.COM",
+        "Purpose": "S2 Integration Example",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.26",
+                "Online": false
+            },
+            {
+                "Name": "Panel",
+                "IP": "192.168.1.36",
+                "Online": false
+            },
+            {
+                "Name": "System",
+                "IP": "192.168.1.46",
+                "Online": false
+            }
+        ],
+        "Services": [
+            {
+                "Name": "MSSQL$SQLEXPRESS",
+                "Description": "SQL Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "RabbitMQ",
+                "Description": "RabbitMQ Server",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaBusinessEngine",
+                "Description": "Traka Business Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "TrakaCommsEngine",
+                "Description": "Traka Comms Engine Service",
+                "Running": false,
+                "State": "Stopped"
+            },
+            {
+                "Name": "Traka Integration Engine",
+                "Description": "Traka Integration Engine",
+                "Running": false,
+                "State": "Stopped"
+            }
+        ]
+    },
+    "NetBox": {
+        "Operational": false,
+        "HostName": "TUSA-NETBOX.TRAKAUSA.COM",
+        "Purpose": "S2 Netbox Virtual Machine",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.28",
+                "Online": false
+            }
+        ],
+        "Services": []
+    },
+    "DC": {
+        "Operational": false,
+        "HostName": "TUSA-DC.TRAKAUSA.COM",
+        "Purpose": "Domain Controller",
+        "Hosts": [
+            {
+                "Name": "Server",
+                "IP": "192.168.1.27",
+                "Online": false
+            }
+        ],
+        "Services": []
+    }
+}

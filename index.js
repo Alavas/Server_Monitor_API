@@ -13,7 +13,7 @@ const app = express()
 const server = http.Server(app)
 const wss = new ws.Server({ server })
 
-const checkServices = require('./check-services')(wmiQuery)
+const checkServices = require('./check-services/check-services')(wmiQuery)
 
 app.all('*', (req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')

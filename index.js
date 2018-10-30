@@ -1,8 +1,8 @@
-const shell = require('node-powershell')
 const express = require('express')
 const _ = require('lodash')
 const http = require('http')
 const ws = require('ws')
+const ping = require('domain-ping')
 const wmi = require('node-wmi')
 const util = require('util')
 const wmiQuery = util.promisify(wmi.Query)
@@ -13,7 +13,7 @@ const app = express()
 const server = http.Server(app)
 const wss = new ws.Server({ server })
 
-const checkServices = require('./check-services/check-services')(wmiQuery)
+const checkServices = require('./check-services')(wmiQuery)
 
 app.all('*', (req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')
@@ -23,12 +23,6 @@ app.all('*', (req, res, next) => {
 });
 
 app.use(express.static('public'))
-
-const psPing = new shell({
-    executionPolicy: 'Bypass',
-    noProfile: true,
-    debugMsg: false
-})
 
 checkServers()
 
@@ -95,14 +89,12 @@ async function serviceState(server, services) {
 async function hostOnline(server, hosts) {
     console.log("Checking hosts for", server)
     for (const [index, host] of hosts.entries()) {
-        psPing.addCommand(`Test-Connection ${host.IP} -Quiet -Count 1 | ConvertTo-Json -Compress`)
-        let hostState = await psPing.invoke()
-            .then(output => JSON.parse(output))
+        let hostState = await ping(host.IP)
             .then(output => {
                 let state = {
                     "Name": host.Name,
                     "IP": host.IP,
-                    "Online": output
+                    "Online": output.ping
                 }
                 return state
             })
@@ -112,7 +104,6 @@ async function hostOnline(server, hosts) {
                     "IP": host.IP,
                     "Online": false
                 }
-                psPing.dispose()
                 return state
             })
         //Only update the ServerList object if a change has been made.  Update all WebSocket clients.

@@ -1,4 +1,4 @@
-const makeCheckServices = require('./check-services')
+const makeCheckServices = require('.')
 
 describe('check-services', () => {
     let checkServices
